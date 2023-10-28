@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 text-center">
+            <img src="{% static 'images/nobody.jpg' %}" width="75%">
+        </div>
+        <div class="col-8">
+            <h2>{{ about.title }}</h2>
+            {{ about.content | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+          <!-- Updated on field goes in here -->
+    
+          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+      </div>    
+</div>
+{% endblock content %}
