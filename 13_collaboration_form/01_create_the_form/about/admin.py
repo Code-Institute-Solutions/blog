@@ -12,7 +12,7 @@ class AboutAdmin(SummernoteModelAdmin):
 #       above because we are supplying Summernote fields.
 #       If you want to customise the admin panel view in your
 #       own projects, then inherit from admin.ModelAdmin like
-#       we do here.
+#       we do below.
 
 @admin.register(CollaborateRequest)
 class CollaborateRequestAdmin(admin.ModelAdmin):
