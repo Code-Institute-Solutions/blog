@@ -11,5 +11,12 @@
             {{ about.content | safe }}
         </div>
     </div>
+    <div class="row">
+        <div class="col text-right">
+          <!-- Updated on field goes in here -->
+    
+          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+      </div>    
 </div>
 {% endblock content %}
