@@ -1,13 +1,13 @@
-var editButtons = document.getElementsByClassName("btn-edit");
-var commentText = document.getElementById("id_body");
-var commentForm = document.getElementById("commentForm");
-var submitButton = document.getElementById("submitButton");
+const editButtons = document.getElementsByClassName("btn-edit");
+const commentText = document.getElementById("id_body");
+const commentForm = document.getElementById("commentForm");
+const submitButton = document.getElementById("submitButton");
 
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-var deleteButtons = document.getElementsByClassName("btn-delete");
-var deleteConfirm = document.getElementById("deleteConfirm");
+const deleteButtons = document.getElementsByClassName("btn-delete");
+const deleteConfirm = document.getElementById("deleteConfirm");
 
-/**
+/*
  * Initializes edit functionality for the provided edit buttons.
  * 
  * For each button in the `editButtons` collection:
@@ -17,6 +17,7 @@ var deleteConfirm = document.getElementById("deleteConfirm");
  * - Updates the submit button's text to "Update".
  * - Sets the form's action attribute to the `edit_comment/{commentId}` endpoint.
  */
+
 for (let button of editButtons) {
     button.addEventListener("click", (e) => {
         let commentId = e.target.getAttribute("comment_id");
@@ -27,7 +28,7 @@ for (let button of editButtons) {
     });
 }
 
-/**
+/*
  * Initializes deletion functionality for the provided delete buttons.
  * 
  * For each button in the `deleteButtons` collection:
