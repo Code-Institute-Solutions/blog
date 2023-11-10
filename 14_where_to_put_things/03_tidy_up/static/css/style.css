@@ -107,7 +107,7 @@ body {
 }
 
 .post-title {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 5%;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #23BBBB;
     color: #fff;
 }
 
