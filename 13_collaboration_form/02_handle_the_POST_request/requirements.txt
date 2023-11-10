@@ -1,7 +1,7 @@
 asgiref==3.7.2
 crispy-bootstrap5==0.7
 dj-database-url==0.5.0
-Django==4.2.3
+django==4.2.7
 django-allauth==0.57.0
 django-crispy-forms==2.1
 django-summernote==0.8.20.0
