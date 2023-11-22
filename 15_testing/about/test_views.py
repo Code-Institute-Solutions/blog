@@ -6,6 +6,7 @@ from .forms import CollaborateForm
 # Create your tests here.
 class TestAboutView(TestCase):
 
+
     def setUp(self):
         """Creates about me content"""
         self.about_content = About(
@@ -31,4 +32,3 @@ class TestAboutView(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(
             b'Collaboration request received! I endeavour to respond within 2 working days.', response.content)
-

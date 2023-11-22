@@ -7,6 +7,7 @@ from .models import Post
 # Create your tests here.
 class TestBlogViews(TestCase):
 
+
     def setUp(self):
         """Create a superuser and a blog post"""
         self.user = User.objects.create_superuser(
@@ -36,4 +37,3 @@ class TestBlogViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Comment submitted and awaiting approval',
                       response.content)
-

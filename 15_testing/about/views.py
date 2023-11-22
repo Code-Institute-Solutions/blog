@@ -17,7 +17,7 @@ def about_me(request):
         The most recent instance of :model:`about.About`.
         ``collaborate_form``
             An instance of :form:`about.CollaborateForm`.
-    
+
     **Template**
     :template:`about/about.html`
     """
@@ -37,5 +37,5 @@ def about_me(request):
         request,
         "about/about.html",
         {"about": about,
-        "collaborate_form": collaborate_form},
+         "collaborate_form": collaborate_form},
     )
