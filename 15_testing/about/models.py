@@ -21,7 +21,7 @@ class CollaborateRequest(models.Model):
     """
     Stores a single collaboration request message
     """
-    name = models.CharField(max_length=200, unique=True)
+    name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField()
     read = models.BooleanField(default=False)
