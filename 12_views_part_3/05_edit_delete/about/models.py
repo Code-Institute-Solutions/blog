@@ -13,7 +13,7 @@ class About(models.Model):
 
 
 class CollaborateRequest(models.Model):
-    name = models.CharField(max_length=200, unique=True)
+    name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField()
     read = models.BooleanField(default=False)
